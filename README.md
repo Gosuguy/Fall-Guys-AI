@@ -1,4 +1,4 @@
-<a href="https://youtu.be/GS_0ZKzrvk0" target="_blank"><img src="https://i.imgur.com/sG7xxyc.png" title="Clarity Coders YouTube" /></a>
+<a href="https://youtu.be/Li2C7f61rZs" target="_blank"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/26d947fb-61f5-4f5a-953f-64f52fb24301/de9f44g-c9659a69-a49b-426b-8bd1-7d2380a6ee51.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI2ZDk0N2ZiLTYxZjUtNGY1YS05NTNmLTY0ZjUyZmIyNDMwMVwvZGU5ZjQ0Zy1jOTY1OWE2OS1hNDliLTQyNmItOGJkMS03ZDIzODBhNmVlNTEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SjkL3nDFd_Q7VgxI-Ynw19ZZ_tNqxvOhL2U-B0slFOM" title="Clarity Coders YouTube" /></a>
 # Python / FastAI CNN - Playing Fall Guys
 > This code was used to gather and process data while playing the game Fall Guys.
 > The network was then trained using the FastAI Libary. 
