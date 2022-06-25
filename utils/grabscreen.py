@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
-import win32gui, win32ui, win32con, win32api
-
+from win32 import win32gui
+import win32ui, win32con, win32api
 
 def grab_screen(region=None):
 

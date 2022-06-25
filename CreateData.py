@@ -7,8 +7,8 @@ from utils.grabscreen import grab_screen
 from utils.getkeys import key_check
 
 
-file_name = "C:/Users/programmer/Desktop/FallGuys/data/training_data.npy"
-file_name2 = "C:/Users/programmer/Desktop/FallGuys/data/target_data.npy"
+file_name = "C:/Users/Juna/Desktop/Machine Learning/Personal Projects/Fall-Guys/data/training_data.npy"
+file_name2 = "C:/Users/Juna/Desktop/Machine Learning/Personal Projects/Fall-Guys/data/target_data.npy"
 
 
 def get_data():
@@ -33,7 +33,7 @@ image_data, targets = get_data()
 while True:
     keys = key_check()
     print("waiting press B to start")
-    if keys == "B":
+    if keys[0] == "B":
         print("Starting")
         break
 
@@ -42,24 +42,25 @@ count = 0
 while True:
     count +=1
     last_time = time.time()
-    image = grab_screen(region=(50, 100, 799, 449))
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    image = grab_screen(region=(50, 100, 1279, 569)) # left, top, x2, y2 = region. (50, 100, 799, 449) for 800 x 600. 749 x 399. I have 1280 x 720. so 1229 x 519.
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) # simplify image
 
     image = cv2.Canny(image, threshold1=119, threshold2=250)
 
-    image = cv2.resize(image, (224, 224))
+    image = cv2.resize(image, (224, 224)) 
 
     # Debug line to show image
     cv2.imshow("AI Peak", image)
     cv2.waitKey(1)
 
     # Convert to numpy array
-    image = np.array(image)
-    image_data.append(image)
+    image = np.array(image) # store img as array
+    image_data.append(image) # append image to list
 
     keys = key_check()
-    targets.append(keys)
-    if keys == "H":
+    targets.append(keys) # append key to list
+    print("Pressing Key: ", keys)
+    if keys[0] == "H":
         break
 
     print('loop took {} seconds'.format(time.time()-last_time))
